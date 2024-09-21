@@ -1,0 +1,11 @@
+name: say-hello
+on: push
+jobs:  
+  build:    
+    runs-on: ubuntu-latest
+    steps:
+      # экшен — выполняет какую-то задачу
+      # checkout — клонирует репозиторий
+      - uses: actions/checkout@v4
+      # run – произвольная bash-команда      
+      - run: make say-hello
